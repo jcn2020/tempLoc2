@@ -1,4 +1,4 @@
-def call(Map config=[:] {
+def call(Map config=[:]) {
     node {
         stage("Say You") {
             println("Say You") 
