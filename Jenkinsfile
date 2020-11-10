@@ -2,7 +2,7 @@
 pipeline {
     agent any
     triggers {
-      pollSCM('') // Enabling being build on Push
+      pollSCM('H/2 * * * *') // Enabling being build on Push
     } 
     stages {
         stage("Helllo") {
