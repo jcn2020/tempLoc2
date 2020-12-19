@@ -1,6 +1,14 @@
 // need credentials jcn2020 to the public repo.
 // working ok - build per trigger << need to login as admin >> 
 
+import jenkins.model.*
+import hudson.model.*
+
+import org.jenkinsci.plugins.workflow.job.* ;  //  job
+import com.cloudbees.hudson.plugins.folder.* ;  // folder 
+import org.jenkinsci.plugins.workflow.multibranch.* ;  // multibranch
+import jenkins.branch.* ; // OrganizationFolder
+
 def myFolder = "folder-DslMultibranchGithub2" ; 
 def myJobName = "job-dslMultibranchGithub" ; 
 def int unitToKeep = 1 ; 
