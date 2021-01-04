@@ -28,8 +28,10 @@ class Utilities {
 
     Map<String,String> listOrphansMultiBranches( String folderName = ".*") {
         def orphanBranches = [:] ; 
-        def (int orphanBranchCounter, int totalBranchCounter) = [0, 0] ; 
-        def (int totalFolderCounter, int folderOrphanBranchCounter) = [0, 0] ; 
+        def int orphanBranchCounter = 0 ; 
+        def int totalBranchCounter  = 0 ; 
+        def int totalFolderCounter  = 0 ; 
+        def int folderOrphanBranchCounter = 0 ; 
         this.getFolders() ; 
         
         allFolders.each { folder ->  
